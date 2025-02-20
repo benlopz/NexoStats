@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 25px;
+}
+
+/* Barra de búsqueda */
+
+input {
+  padding: 15px;
+  width: 300px;
+  border-radius: 15px;
+  border: black;
+}
+
+button {
+  padding: 15px;
+  border: black;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Barra de recomendaciones (pendiente revisar el hover, no me convence) */
+
+#game-results {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+/*Con esto damos efecto de énfasis al pasar el cursor por encima*/
+.game-card:hover {
+  width: 300px;
+  max-height: max-content;
+  opacity: 1;
+  filter: contrast(110%);
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 5px;
+}
