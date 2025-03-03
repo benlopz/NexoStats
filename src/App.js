@@ -1,8 +1,8 @@
-// Hay que echarle un vistazo con calma a esto
+// Declaramos las constantes con la key que tenemos de RAWG y el enlace a la api.
 const API_KEY = "204f8c2913c54a75a1ce44830ffac870";
 const BASE_URL = "https://api.rawg.io/api/games";
 
-// Función para obtener juegos populares
+// Función para obtener la recomendación de juegos
 async function fetchPopularGames() {
   try {
     const response = await fetch(`${BASE_URL}?key=${API_KEY}&page_size=5`);

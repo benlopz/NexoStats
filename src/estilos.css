@@ -14,8 +14,10 @@ body {
     #2b86c5 100%
   );
   text-align: center;
+  justify-content: center;
+  align-items: center;
   color: white;
-  padding: 10px;
+  padding: 100px;
 }
 
 h1 {
@@ -26,6 +28,10 @@ h2 {
 }
 
 /* Barra de búsqueda */
+
+#buscador {
+  padding: 100px;
+}
 
 input {
   padding: 15px;
@@ -48,6 +54,7 @@ button {
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  padding: 50px;
 }
 
 .game-card {
