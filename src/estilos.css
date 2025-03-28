@@ -48,8 +48,39 @@ button {
   cursor: pointer;
 }
 
-/* Barra de recomendaciones (pendiente revisar el hover, no me convence) */
+/* Mensaje de error */
 
+.mensaje{
+  text-align: center;
+  font-size: 35px;
+  color: #fb0000;
+  margin-top: 25px;
+}
+
+/* Barra de recomendaciones */
+/* Con display: flex y overflow x_ auto hacemos que los juegos recomendados se alineen en fila y se puedan desplazar*/
+
+#lista-recomendaciones {
+  display:flex;
+  gap:10px;
+  overflow-x: auto;
+  padding: 15px;
+}
+
+.juego {
+  text-align: center;
+  width: 150px;
+}
+
+.juego img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+#resultados-busqueda{
+  margin-top: 20px;
+}
+/*
 #game-results {
   margin-top: 20px;
   display: flex;
@@ -64,7 +95,7 @@ button {
   text-align: center;
 }
 
-/*Con esto damos efecto de énfasis al pasar el cursor por encima*/
+/*Con esto damos efecto de énfasis al pasar el cursor por encima
 .game-card:hover {
   width: 300px;
   max-height: max-content;
