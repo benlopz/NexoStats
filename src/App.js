@@ -21,6 +21,7 @@ function mostrarJuegos(juegos) {
     <h3>${juego.name}</h3>
     <p>Fecha de lanzamiento: ${juego.released}</p>
     <p>Metacritic: ${juego.metacritic}</p>
+    <p>Duración: ${juego.playtime}</p>
     `;
 
     contenedor.appendChild(juegoElemento);
@@ -54,7 +55,7 @@ async function buscarJuego() {
 
   try {
     const response = await fetch(
-      `https://api.rawg.io/api/games?key=${API_KEY}&search=${query}&page_size=10`
+      `https://api.rawg.io/api/games?key=${API_KEY}&search=${query}&page_size=5`
     );
     if (!response.ok) {
       throw new Error("Error al buscar el juego");
@@ -85,7 +86,7 @@ function mostrarMensaje(mensaje) {
   contenedor.innerHTML = `<p class="mensaje">${mensaje}</p>`;
 }
 
-/* Primero haremos una petición a la API desde nuestra página con fetch () que nos permite hacer peticiones a servidores web.
+/* Haremos una petición a la API desde nuestra página con fetch () que nos permite hacer peticiones a servidores web.
 Con (`${BASE_URL}?key=${API_KEY}`) construimos la URL de la API desde donde se obtendrán los datos.
 Con page_size=5 limitamos los juegos recomendados a un máximo de 5
 La palabra reservada await detiene la ejecución hasta que responda la API
