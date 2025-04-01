@@ -1,7 +1,9 @@
 <<<<<<< HEAD
-# NexoStats
-NexoStats* permitirá buscar un juego para ver sus estadísticas y nos recomendará juegos similares al buscado.
-=======
+
+# Nexo\*
+
+# Nexo\* es una apliación web que permitirá buscar un juego para ver sus estadísticas y datos generales y, además, nos podrá recomendar juegos similares al buscado. Actualmente se encuentra en proceso de desarrollo en una versión beta en la que se está mejorando e incluyendo nuevas funcionalidades.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,4 +74,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 038358a (Primeros pasos apliacion)
+
+> > > > > > > 038358a (Primeros pasos apliacion)
