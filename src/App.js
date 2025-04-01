@@ -16,12 +16,19 @@ function mostrarJuegos(juegos) {
     const juegoElemento = document.createElement("div");
     juegoElemento.classList.add("juego");
 
+    /*Creamos las constantes para poder obtener los datos de  las plataformas*/
+
+    const plataformas = juego.platforms
+      ? juego.platforms.map((p) => p.platform.name).join(", ")
+      : "No disponible";
+
     juegoElemento.innerHTML = `
     <img src="${juego.background_image}" alt="${juego.name}">
     <h3>${juego.name}</h3>
+    <p>Metacritic: ${juego.metacritic}/100</p>
     <p>Fecha de lanzamiento: ${juego.released}</p>
-    <p>Metacritic: ${juego.metacritic}</p>
-    <p>Duración: ${juego.playtime}</p>
+    <p>Duración: ${juego.playtime} horas</p>
+    <p>Plataformas: ${plataformas}</p>
     `;
 
     contenedor.appendChild(juegoElemento);
