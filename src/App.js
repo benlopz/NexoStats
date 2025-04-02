@@ -89,7 +89,7 @@ Con mostrarMensaje() mostramos un texto con el mensaje que queramos */
 //Limpiamos el contenido anterior con .innerHTML
 
 function mostrarMensaje(mensaje) {
-  const contenedor = document.getElementById("recomendaciones");
+  const contenedor = document.getElementById("resultados-busqueda");
   contenedor.innerHTML = `<p class="mensaje">${mensaje}</p>`;
 }
 
